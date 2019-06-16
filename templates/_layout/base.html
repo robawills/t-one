@@ -1,0 +1,44 @@
+{#
+ # Layout template
+ # ---------------
+ #
+ # This template defines your site’s global layout. It can be
+ # “extended” by other templates to fill in the gaps.
+ #
+ # See Twig’s Template Inheritance documentation for more details:
+ # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
+ #}
+
+ {% set baseUrl = craft.config.environmentVariables.baseUrl ?? siteUrl %}
+
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="description" content="">
+         <meta name="coverage" content="Worldwide">
+         <meta name="format-detection" content="telephone=no">
+         <title>T One</title>
+         <link rel="home" href="{{ siteUrl }}">
+         <link href="{{ baseUrl }}assets/css/app.css" rel="stylesheet">
+         
+     </head>
+     
+     <body>
+
+        {% include "_layout/_partials/header" %}
+
+         <main role="main" class="app-main">
+             {% block content %}
+                 <p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
+                 <p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
+             {% endblock %}
+         </main>
+
+         {% includeJsFile baseUrl ~ 'assets/js/app.js' %}
+ 
+     </body>
+ 
+ </html>
