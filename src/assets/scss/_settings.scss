@@ -69,16 +69,16 @@ $global-font-size: 100%;
 $global-width: rem-calc(1600);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #1d1d1d,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$light-gray: #eeeeee;
+$medium-gray: #818181;
+$dark-gray: #3b3b3b;
+$black: #1d1d1d;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
@@ -859,11 +859,16 @@ $xy-grid: true;
 $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
-  small: 20px,
-  medium: 30px
+  small: 1.5rem,
+  medium: 2rem,
+  large: 3rem
 );
 $grid-padding-gutters: $grid-margin-gutters;
-$grid-container-padding: $grid-padding-gutters;
+$grid-container-padding: (
+  small: 2rem,
+  medium: 3rem,
+  large: 5rem
+);
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;
 
