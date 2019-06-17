@@ -1,5 +1,9 @@
 .button {
-    &__left {
-        float: left;
+    margin: 0;
+    &--right {
+        float: right;
+    }
+    &--center {
+        align-self: center;
     }
 }

@@ -1,0 +1,19 @@
+.hero {
+    &__img {
+        height: 30rem;
+        background-color: $medium-gray;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__title {
+        color: $white;
+        font-size: 2.5rem;
+        width: 100%;
+        padding: 2rem;
+
+        &--b {
+            align-self: flex-end;
+        }
+    }
+}

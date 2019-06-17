@@ -1,0 +1,13 @@
+.split-box {
+    &__img {
+        height: 20rem;
+        background-color: $light-gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__text {
+        padding: 3rem 5rem;
+    }
+}

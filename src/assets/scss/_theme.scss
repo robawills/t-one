@@ -43,7 +43,11 @@
     Designed pieces of UI. Only using classes. More explicit naming.
 \*----------------------------------------------------------------------------*/
 
+@import 'components/header';              //  Header styling.
 @import 'components/button';              //  Button styling.
+
+@import 'components/hero';                //  Hero styling.
+@import 'components/split-box';           //  Split-box styling.
 
 
 /*----------------------------------------------------------------------------*\
