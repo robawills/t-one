@@ -1,0 +1,15 @@
+.logo-li {
+    padding: 4rem 0;
+
+    &__img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        background-color: $light-gray;
+        margin: 1.5rem auto 0.75rem;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+    }
+}
