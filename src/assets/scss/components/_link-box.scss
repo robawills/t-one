@@ -1,0 +1,8 @@
+.link-box {
+    &__padding {
+        padding: 3rem 0;
+    }
+    &__boarder {
+        border-right: 0.15rem solid $white;
+    }
+}
