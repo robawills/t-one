@@ -1,6 +1,11 @@
 .logo-li {
     padding: 4rem 0;
 
+    &__header {
+        color: $medium-gray;
+        margin: 1rem 0 2rem;
+    }
+
     &__img {
         width: 7rem;
         height: 7rem;

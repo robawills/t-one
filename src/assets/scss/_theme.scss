@@ -44,6 +44,7 @@
 \*----------------------------------------------------------------------------*/
 
 @import 'components/header';              //  Header styling.
+@import 'components/footer';              //  Footer styling.
 @import 'components/button';              //  Button styling.
 
 @import 'components/hero';                //  Hero styling.
@@ -59,7 +60,8 @@
 \*----------------------------------------------------------------------------*/
 
 @import 'helpers/colors';              //  Color styles.
-@import 'helpers/fonts';                //  Fonts styles.
+@import 'helpers/fonts';               //  Fonts styles.
+@import 'helpers/spacing';             //  Spacing styles.
 
 /*----------------------------------------------------------------------------*\
     #OVERRIDES

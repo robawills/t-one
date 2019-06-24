@@ -6,4 +6,18 @@
     &--center {
         align-self: center;
     }
+
+    &--outline {
+        background: none;
+        border: 1px solid $main;
+        transition: 0.5s all;
+        &:hover {
+            background: $main;
+        }
+    }
+
+    &--splitbox {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
 }
