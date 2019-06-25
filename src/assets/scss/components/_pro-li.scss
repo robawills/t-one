@@ -7,17 +7,48 @@
         margin-bottom: 3rem;
     }
 
-    &__item:nth-child(3n+4) {
-        .pro-li__img {
-            height: 25rem;
-            background-color: $medium-gray;
+    &__item {
+        &:nth-child(3n+4) {
+            .pro-li__img {
+                height: 25rem;
+                background-color: $medium-gray;
+            }
         }
+
+        &:hover {
+            .pro-li__img:before {
+                content: "View";
+                text-align: center;
+                color: $white;
+                font-size: 2rem;
+                letter-spacing: 1px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba($main, .5);
+                height: inherit;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+            }
+        }
+        
     }
 
     &__img {
         height: 20rem;
         background-color: $light-gray;
         margin-bottom: 1.5rem;
+        position: relative;
+        
+
+        &::before {
+            content: "";
+            display: none;
+        }
     }
 
     &__title {
