@@ -8,6 +8,8 @@
     }
 
     &__item {
+
+
         &:nth-child(3n+4) {
             .pro-li__img {
                 height: 25rem;
@@ -18,21 +20,19 @@
         &:hover {
             .pro-li__img:before {
                 content: "View";
-                text-align: center;
-                color: $white;
+                text-align: center;         
                 font-size: 2rem;
                 letter-spacing: 1px;
                 position: absolute;
                 top: 0;
                 left: 0;
-                background: rgba($main, .5);
+                background: rgba($main, .8);
                 height: inherit;
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                
             }
         }
         
@@ -43,11 +43,12 @@
         background-color: $light-gray;
         margin-bottom: 1.5rem;
         position: relative;
-        
 
         &::before {
             content: "";
-            display: none;
+            background: none;
+            transition: all 0.5s;
+            color: $white;
         }
     }
 
