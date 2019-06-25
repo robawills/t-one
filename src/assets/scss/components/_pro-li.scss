@@ -1,0 +1,26 @@
+.pro-li {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    &__header {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__item:nth-child(3n+4) {
+        .pro-li__img {
+            height: 25rem;
+            background-color: $medium-gray;
+        }
+    }
+
+    &__img {
+        height: 20rem;
+        background-color: $light-gray;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+    }
+}

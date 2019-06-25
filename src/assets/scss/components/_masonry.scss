@@ -1,0 +1,19 @@
+.masonry-css {
+  column-count: 1;
+  column-gap: 3rem;
+
+  @include breakpoint(medium) {
+    column-count: 2;
+  }
+}
+
+.masonry-css-item {
+  break-inside: avoid;
+  margin-bottom: 4rem;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+
