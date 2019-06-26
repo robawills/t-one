@@ -4,16 +4,18 @@
         background-color: $medium-gray;
         display: flex;
         flex-direction: row;
+        color: $white;
     }
 
     &__title {
         color: $white;
         font-size: 2.5rem;
         width: 100%;
-        padding: 2rem;
+    }
 
-        &--b {
-            align-self: flex-end;
-        }
+    &__container {
+        align-self: flex-end;
+        padding: 5rem 5rem 3rem;
+        width: 100%;
     }
 }

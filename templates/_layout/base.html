@@ -27,6 +27,13 @@
      </head>
      
      <body>
+        {% set home = [
+            siteUrl
+        ] %}
+
+        {% set about = [
+            craft.entries.id(5).first().url() 
+        ] %}
 
         {% include "_layout/_partials/header" %}
 

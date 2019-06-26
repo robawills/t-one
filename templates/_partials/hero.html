@@ -1,9 +1,20 @@
 <section class="hero">
     <div class="grid-container">
         <div class="grid-x  grid-padding-x">
+            {% if craft.request.getUrl() in home %}
             <div class="cell  small-12  hero__img  text-center">
-                <h1 class="hero__title  hero__title--b">Landscape & groundworks</h1>
+                <div class="hero__container">
+                    <h1 class="hero__title  hero__title--b">Landscape & groundworks</h1>
+                </div>
             </div>
+            {% elseif craft.request.getUrl() in about %}
+                <div class="cell  small-12  hero__img  hero__img--about">
+                    <div class="hero__container">
+                        <h1 class="hero__title  hero__title--about">About us</h1>
+                        <h3 class="hero__p">With a friendly, professional and<br> consultative approach to each project.</h3>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </div>
 </section>

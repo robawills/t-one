@@ -2,7 +2,7 @@
     padding-top: 3rem;
 
     &__details {
-        padding-right: 3rem;
+        padding: 1rem 1.5rem;
     }
     &__title {
         font-size: 2rem;
@@ -27,7 +27,7 @@
     }
 
     &__img {
-        height: 16rem;
+        height: 14rem;
         background-color: $light-gray;
         margin-bottom: 3rem;
 
