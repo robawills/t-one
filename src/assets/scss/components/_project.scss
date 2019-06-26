@@ -1,0 +1,38 @@
+.project {
+    padding-top: 3rem;
+
+    &__details {
+        padding-right: 3rem;
+    }
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__p {
+        margin-bottom: 2rem;
+    }
+
+    &__item {
+        &:nth-child(odd) {
+            .project__img {
+                margin-left: 1.25rem;
+            }
+        }
+        &:nth-child(even) {
+            .project__img {
+                margin-right: 1.25rem;
+            }
+        }
+    }
+
+    &__img {
+        height: 16rem;
+        background-color: $light-gray;
+        margin-bottom: 3rem;
+
+        &--first {
+            height: 25rem;
+        }
+    }
+}

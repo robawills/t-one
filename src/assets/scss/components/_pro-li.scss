@@ -5,13 +5,14 @@
     &__header {
         font-size: 1.5rem;
         margin-bottom: 3rem;
+        padding-right: 2rem;
     }
 
     &__item {
 
         &:nth-child(3n+4) {
             .pro-li__img {
-                height: 25rem;
+                height: 28rem;
                 background-color: $medium-gray;
             }
         }
@@ -38,7 +39,7 @@
     }
 
     &__img {
-        height: 20rem;
+        height: 23rem;
         background-color: $light-gray;
         margin-bottom: 1.5rem;
         position: relative;

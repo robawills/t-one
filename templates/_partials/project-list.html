@@ -6,51 +6,14 @@
                 <article class="masonry-css-item">
                     <p class="pro-li__header">No matter the scale of project you are undertaking, we landscape & groundworks offers a personal, professional service with a relentless commitment to client satisfaction.</p>
                 </article>   
-
-                <article class="masonry-css-item  pro-li__item">
-                    <div class="pro-li__img"></div>
-                    <h1 class="pro-li__title">Title 1 - <span class="light">Domestic</span></h1>
-                </article>   
-
-                <article class="masonry-css-item  pro-li__item">
-                    <div class="pro-li__img"></div>
-                    <h1 class="pro-li__title">Title 2 - <span class="light">Domestic</span></h1>
-                </article>  
-
-                <article class="masonry-css-item  pro-li__item">
-                    <div class="pro-li__img"></div>
-                    <h1 class="pro-li__title">Title 3 - <span class="light">Domestic</span></h1>
-                </article>   
-
-                <article class="masonry-css-item  pro-li__item">
-                    <div class="pro-li__img"></div>
-                    <h1 class="pro-li__title">Title 4 - <span class="light">Domestic</span></h1>
-                </article>   
-
-                <article class="masonry-css-item  pro-li__item">
-                    <div class="pro-li__img"></div>
-                    <h1 class="pro-li__title">Title 5 - <span class="light">Domestic</span></h1>
-                </article>  
-
-                <article class="masonry-css-item  pro-li__item">
-                    <div class="pro-li__img"></div>
-                    <h1 class="pro-li__title">Title 6 - <span class="light">Domestic</span></h1>
-                </article>   
-
-                <article class="masonry-css-item  pro-li__item">
-                    <div class="pro-li__img"></div>
-                    <h1 class="pro-li__title">Title 7 - <span class="light">Domestic</span></h1>
-                </article>   
-
-                <article class="masonry-css-item  pro-li__item">
-                    <div class="pro-li__img"></div>
-                    <h1 class="pro-li__title">Title 8 - <span class="light">Domestic</span></h1>
-                </article>   
-                
-                <article class="masonry-css-item  pro-li__item">
-                    <div class="pro-li__img"></div>
-                    <h1 class="pro-li__title">Title 9 - <span class="light">Domestic</span></h1>
-                </article>   
+                {% for entry in craft.entries.section('work') %}
+                <a href="{{ entry.url }}">
+                    <article class="masonry-css-item  pro-li__item">
+                        <div class="pro-li__img"></div>
+                        <h1 class="pro-li__title">{{ entry.title }} - <span class="light">Domestic</span></h1>
+                    </article>
+                </a>   
+                {% endfor %}
 
             </div> 
         </div>
