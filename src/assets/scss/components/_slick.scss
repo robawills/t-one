@@ -1,0 +1,23 @@
+$slick-font-family: 'none';
+$slick-loader-path: '/node_modules/slick-carousel/slick/';
+
+@import './node_modules/slick-carousel/slick/slick.scss';
+@import './node_modules/slick-carousel/slick/slick-theme.scss';
+
+.slick-dots li button:before
+{
+    font-size: 2rem;
+    display: none;
+
+}
+.js-slick-spec .slick-dots li button:before
+{
+    font-size: 2rem;
+    display: block;
+
+}
+
+.slick-slide {
+    padding: 0;
+}
+
