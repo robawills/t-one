@@ -24470,7 +24470,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_2__);
 
 
- // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-slick').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  arrows: false
+}); // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
 // it would execute earlier than we have assigned the global variable.
 // This is why we have to use CommonJS require() here since it doesn't

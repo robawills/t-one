@@ -4,20 +4,26 @@ $slick-loader-path: '/node_modules/slick-carousel/slick/';
 @import './node_modules/slick-carousel/slick/slick.scss';
 @import './node_modules/slick-carousel/slick/slick-theme.scss';
 
-.slick-dots li button:before
-{
-    font-size: 2rem;
-    display: none;
+.slick-dots {
 
-}
-.js-slick-spec .slick-dots li button:before
-{
-    font-size: 2rem;
-    display: block;
-
-}
-
-.slick-slide {
-    padding: 0;
+        li {
+			margin: 0 0.2rem;
+		}
+	
+		li button {
+			// display: block;
+			width: 0.75rem;
+			height: 0.75rem;
+			padding: 0;
+			border: none;
+			border-radius: 50%;
+			background: white;
+            text-indent: -9999px;
+		}
+	
+		li.slick-active button {
+			background-color: $medium-gray;
+		}
+	
 }
 

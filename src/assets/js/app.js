@@ -2,6 +2,19 @@ import $ from 'jquery';
 import 'what-input';
 import slick from 'slick-carousel';
 
+
+$('.js-slick').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows : false
+  });
+
+      
+
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
 // it would execute earlier than we have assigned the global variable.

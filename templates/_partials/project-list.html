@@ -7,12 +7,14 @@
                     <p class="pro-li__header">No matter the scale of project you are undertaking, we landscape & groundworks offers a personal, professional service with a relentless commitment to client satisfaction.</p>
                 </article>   
                 {% for entry in craft.entries.section('work') %}
-                <a href="{{ entry.url }}">
+                
                     <article class="masonry-css-item  pro-li__item">
-                        <div class="pro-li__img"></div>
-                        <h1 class="pro-li__title">{{ entry.title }} - <span class="light">Domestic</span></h1>
+                        <a href="{{ entry.url }}">
+                            <div class="pro-li__img"></div>
+                            <h1 class="pro-li__title">{{ entry.title }} - <span class="light">Domestic</span></h1>
+                        </a> 
                     </article>
-                </a>   
+                  
                 {% endfor %}
 
             </div> 
