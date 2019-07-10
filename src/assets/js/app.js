@@ -3,23 +3,33 @@ import 'what-input';
 import slick from 'slick-carousel';
 
 
-$('.js-slick').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    arrows : false
-  });
+// $('.js-slick').slick({
+//     dots: true,
+//     infinite: true,
+//     speed: 300,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     arrows : false
+//   });
 
-  $('.js-slick').on('afterChange',
-  function(event, slick, currentSlide){
-    var index=parseInt(currentSlide)+1; 
-    console.log('Slick slider -> EVENT : afterChange',index);
-    $('.active').removeClass('active').addClass('hidden');
-    $('#content-'+index).removeClass('hidden').addClass('active');
-});  
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  arrows: false,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  autoplay: false,
+  dots: true,
+  centerMode: false,
+  arrows: false
+});
+  
 
 
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted

@@ -24470,21 +24470,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_2__);
 
 
+ // $('.js-slick').slick({
+//     dots: true,
+//     infinite: true,
+//     speed: 300,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     arrows : false
+//   });
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-slick').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
-  arrows: false
+  arrows: false,
+  asNavFor: '.slider-nav'
 });
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-slick').on('afterChange', function (event, slick, currentSlide) {
-  var index = parseInt(currentSlide) + 1;
-  console.log('Slick slider -> EVENT : afterChange', index);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.active').removeClass('active').addClass('hidden');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#content-' + index).removeClass('hidden').addClass('active');
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-nav').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  autoplay: false,
+  dots: true,
+  centerMode: false,
+  arrows: false
 }); // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
 // it would execute earlier than we have assigned the global variable.
