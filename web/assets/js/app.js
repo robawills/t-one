@@ -24479,6 +24479,12 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-slick').slick({
   slidesToScroll: 1,
   autoplay: false,
   arrows: false
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-slick').on('afterChange', function (event, slick, currentSlide) {
+  var index = parseInt(currentSlide) + 1;
+  console.log('Slick slider -> EVENT : afterChange', index);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.active').removeClass('active').addClass('hidden');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#content-' + index).removeClass('hidden').addClass('active');
 }); // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
 // it would execute earlier than we have assigned the global variable.

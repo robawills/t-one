@@ -13,7 +13,14 @@ $('.js-slick').slick({
     arrows : false
   });
 
-      
+  $('.js-slick').on('afterChange',
+  function(event, slick, currentSlide){
+    var index=parseInt(currentSlide)+1; 
+    console.log('Slick slider -> EVENT : afterChange',index);
+    $('.active').removeClass('active').addClass('hidden');
+    $('#content-'+index).removeClass('hidden').addClass('active');
+});  
+
 
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,

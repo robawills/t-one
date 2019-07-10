@@ -6,24 +6,27 @@ $slick-loader-path: '/node_modules/slick-carousel/slick/';
 
 .slick-dots {
 
-        li {
-			margin: 0 0.2rem;
-		}
-	
-		li button {
-			// display: block;
-			width: 0.75rem;
-			height: 0.75rem;
-			padding: 0;
-			border: none;
-			border-radius: 50%;
-			background: white;
-            text-indent: -9999px;
-		}
-	
-		li.slick-active button {
-			background-color: $medium-gray;
-		}
+	li {
+		margin: 0 0.2rem;
+	}
+
+	li button {
+		// display: block;
+		width: 0.75rem;
+		height: 0.75rem;
+		padding: 0;
+		border: none;
+		border-radius: 50%;
+		background: white;
+		text-indent: -9999px;
+	}
+
+	li.slick-active button {
+		background-color: $medium-gray;
+	}
 	
 }
 
+.hidden {
+	display:none;
+}
