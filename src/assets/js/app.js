@@ -3,34 +3,6 @@ import 'what-input';
 import slick from 'slick-carousel';
 
 
-// $('.js-slick').slick({
-//     dots: true,
-//     infinite: true,
-//     speed: 300,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: false,
-//     arrows : false
-//   });
-
-$('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  arrows: false,
-  asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  asNavFor: '.slider-for',
-  autoplay: false,
-  dots: true,
-  centerMode: false,
-  arrows: false
-});
-  
-
 
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
@@ -46,3 +18,10 @@ require('foundation-sites');
 
 
 $(document).foundation();
+
+
+import carousel from './modules/_carousel.js';
+
+$(() => {
+  carousel();
+});

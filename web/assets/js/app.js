@@ -24468,34 +24468,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var what_input__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(what_input__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_carousel_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/_carousel.js */ "./src/assets/js/modules/_carousel.js");
 
 
- // $('.js-slick').slick({
-//     dots: true,
-//     infinite: true,
-//     speed: 300,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: false,
-//     arrows : false
-//   });
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  arrows: false,
-  asNavFor: '.slider-nav'
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-nav').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  asNavFor: '.slider-for',
-  autoplay: false,
-  dots: true,
-  centerMode: false,
-  arrows: false
-}); // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
+ // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
 // it would execute earlier than we have assigned the global variable.
 // This is why we have to use CommonJS require() here since it doesn't
@@ -24509,6 +24485,53 @@ __webpack_require__(/*! foundation-sites */ "./node_modules/foundation-sites/dis
 
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
+  Object(_modules_carousel_js__WEBPACK_IMPORTED_MODULE_4__["default"])();
+});
+
+/***/ }),
+
+/***/ "./src/assets/js/modules/_carousel.js":
+/*!********************************************!*\
+  !*** ./src/assets/js/modules/_carousel.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var carousel = function carousel() {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: false,
+    dots: true
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: false,
+    asNavFor: '.js-slider-nav'
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-slider-nav').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.js-slider-for',
+    autoplay: false,
+    dots: true,
+    centerMode: false,
+    arrows: false
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (carousel);
 
 /***/ }),
 
