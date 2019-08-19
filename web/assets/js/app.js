@@ -24468,7 +24468,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var what_input__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(what_input__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_carousel_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/_carousel.js */ "./src/assets/js/modules/_carousel.js");
+/* harmony import */ var _modules_carousel_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/_carousel.js */ "./src/assets/js/modules/_carousel.js");
 
 
  // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
@@ -24487,7 +24487,7 @@ __webpack_require__(/*! foundation-sites */ "./node_modules/foundation-sites/dis
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-  Object(_modules_carousel_js__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  Object(_modules_carousel_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 
 /***/ }),
